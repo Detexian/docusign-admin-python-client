@@ -45,7 +45,7 @@ class OrganizationResponse(object):
         'accounts': 'list[OrganizationAccountResponse]',
         'users': 'list[OrganizationSimpleIdObject]',
         'reserved_domains': 'list[DomainResponse]',
-        'identity_providers': 'list[IdentityProvidersResponse]',
+        'identity_providers': 'list[IdentityProviderResponse]',
         'links': 'list[LinkResponse]'
     }
 
@@ -361,7 +361,7 @@ class OrganizationResponse(object):
 
 
         :return: The identity_providers of this OrganizationResponse.  # noqa: E501
-        :rtype: list[IdentityProvidersResponse]
+        :rtype: list[IdentityProviderResponse]
         """
         return self._identity_providers
 
@@ -371,7 +371,7 @@ class OrganizationResponse(object):
 
 
         :param identity_providers: The identity_providers of this OrganizationResponse.  # noqa: E501
-        :type: list[IdentityProvidersResponse]
+        :type: list[IdentityProviderResponse]
         """
 
         self._identity_providers = identity_providers
